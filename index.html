@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup</title>
+    <link rel="shortcut icon" href="assets/icono.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-pink-100">
+    <header class="header px-6 pt-4 pb-4 bg-pink-400">
+        <img class="h-[35px] inline-block " src="assets/star.png"> 
+        <div class="navbar bg-base-100">
+          <ul>
+                    <li class="submenu">
+                            <svg id="img-carrito"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="white">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th class="px-3">Imagen</th>
+                                                <th class="px-3">Nombre</th>
+                                                <th class="px-3">Precio</th>
+                                                <th class="px-3">Cantidad</th>
+                                                <th class="px-3"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="pb-6"></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 button">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div class="pt-4 pb-5">
+        <h1 class="px-6 text-xl md:text-3xl lg:text-3xl font-bold">Tienda Online de Makeup</h1>
+        <p class="px-6 text-s md:text-l lg:text-l">Envio gratis a partir de $2.000.000.</p>
+    </div>
+    <div id="lista-makeup" class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 gap-4 px-6 pb-4">
+        <div>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="assets/dior236.jpeg" alt="">
+                <div class="px-6 py-4">
+                  <h4 class="font-bold text-xl mb-2">Iluminador Dior</h4>
+                  <p class="precio pb-4 text-gray-700 text-base">
+                    $236.000
+                  </p>
+                  <a href="#" class=" hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="1">anadir al carrito</a>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="assets/blush.jpg" alt="">
+            <div class="px-6 py-4">
+              <h4 class="font-bold text-xl mb-2">Blush Rare Beauty</h4>
+              <p class="precio  pb-4 text-gray-700 ">
+                $54.000
+              </p>
+              <a href="#" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="2">anadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="assets/sky.webp" alt="">
+            <div class="px-6 py-4">
+              <h4 class="font-bold text-xl mb-2">Mascara de Pestanas Sky High</h4>
+              <p class="precio pb-4 text-gray-700 text-base">
+                $17.000
+              </p>
+              <a href="#" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="3">anadir al carrito</a>
+            </div>
+          </div>
+          <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="assets/corrector10.webp" alt="">
+            <div class="px-6 py-4">
+              <h4 class="font-bold text-xl mb-2">Corrector Maybelline</h4>
+              <p class="precio pb-4 text-gray-700 text-base">
+                $10.000
+              </p>
+        
+              <a href="#" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="4">anadir al carrito</a>
+            </div>
+          </div>
+          <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="assets/elf50.jpg" alt="">
+            <div class="px-6 py-4">
+              <h4 class="font-bold text-xl mb-2">Primer Elf</h4>
+              <p class=" pb-4 precio text-gray-700 text-base">
+                $50.000
+              </p>
+              <a href="#" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="5">anadir al carrito</a>
+            </div>
+          </div>
+          <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="assets/fitme14.jpeg" alt="">
+            <div class="px-6 py-4">
+              <h4 class="font-bold text-xl mb-2">Base Fit Me</h4>
+              <p class="precio pb-4 text-gray-700 text-base">
+                $14.000
+              </p>
+              <a href="#" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="6">anadir al carrito</a>
+            </div>
+          </div>
+          <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="assets/vinyl22.jpg" alt="">
+            <div class="px-6 py-4">
+              <h4 class="font-bold text-xl mb-2">Labial Vinyl Ink</h4>
+              <p class="precio pb-4 text-gray-700 text-base">
+                $22.000
+              </p>
+              <a href="#" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="7">anadir al carrito</a>
+            </div>
+          </div>
+          <div class=" bg-white max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full" src="assets/mac50.webp" alt="">
+            <div class="px-6 py-4">
+              <h4 class="font-bold text-xl mb-2">Delineador Mac</h4>
+              <p class="precio pb-4 text-gray-700 text-base">
+                $50.000
+              </p>
+              <a href="#" class="hover:bg-pink-300 inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 agregar-carrito" data-id="8">anadir al carrito</a>
+            </div>
+          </div>
+    </div>
+    <footer class=" px-6 pt-4 pb-4 bg-pink-400">
+        <h2 class="text-white">Olivia Iturrusgarai Ballés</h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
